@@ -1,31 +1,44 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
+a:hover {
+	text-decoration: none;
+  }
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 header {
-	background: rgba(89, 182, 223, 1);
+	background: rgb(27, 144, 194);
 	padding: 0px 0px;
   }
   
   .solidHeader {
-	background: rgba(89, 182, 223, 1);
+	background: rgba(27, 144, 194, 1);
 	color: white;
 	padding: 0px 0px;
 	transition: all 1.5s;
   }
   
   .transparentHeader {
-	background: rgba(89, 182, 223, .75);
+	background: rgba(27, 144, 194, .75);
   }
   
   .navbar-brand:hover > * {
 	color: rgba(255, 255, 255, 1);
   }
 
+.navbar-toggler,
+.navbar-toggler-icon,
+.navbar a {
+  color:white !important;
+}
+
+.navbar-toggler,
+.navbar-toggler-icon,
+.navbar a:hover {
+  color: lightgrey !important;
+}
 
 header i {
 	font-size: 2rem;
@@ -59,16 +72,55 @@ header .brandName {
 	width: 40px;
 	height: 40px;
 	border-radius: 50px;
-	background: #47b2e4;
+	background: rgba(27, 144, 194, .75);
 	color: #fff;
 	transition: all 0.4s;
   }
   
   .back-to-top i:hover {
-	background: #209dd8;
-	color: #fff;
+	background: rgba(27, 144, 194, 1);
   }
   
+
+  /* Carousel */
+
+  .backImageDivContainer {
+	width: 100%;
+	height: 350px;
+	background-color: rgba(0, 0, 50, 1);
+	position: relative;
+	display: inline-block;
+  }
+  
+  .backImageDiv {
+	height: 100%;
+	background-image: url(../img/carousel/carousel0.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	opacity: 0.9;
+	display: block;
+  }
+  
+  .overlayCarousel {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+  }
+
+  .carousel-item {
+	width: 100%;
+	height: 350px;
+	position: unset;
+	color: rgba(255, 255, 255, 1) !important;
+	text-align: justify;
+	background-attachment: fixed;
+	padding: 5% 15% 0;
+	margin-top: 1rem;
+  }
+
 
 /*--------------------------------------------------------------
 # Nuestros servicios
@@ -77,14 +129,18 @@ header .brandName {
 /* Image Hover Text Overlay Effect: https://www.youtube.com/watch?v=exb2ab72Xhs */
 #servicios .card {
     position: relative;
-    max-width: 400px;
+    width: 400px;
     color: white;
     overflow: hidden;
 }
 
+#servicios .card-img {
+	height: 300px;
+}
+
 .cardOverlay {
     position: absolute;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(27, 144, 194, .75);
     height: 100%;
     transform: translateY(90%);
     transition: transform 0.25s;
@@ -104,7 +160,7 @@ header .brandName {
     border-radius: 50%;
 	width: 50px;
 	height: 50px;
-	background: #FFA500;
+	background: rgba(27, 144, 194, 1);
 	line-height: 45px;
 	color: #fff;
 	font-size: 25px;
@@ -122,5 +178,9 @@ header .brandName {
 }
 
 /*--------------------------------------------------------------
-# Footer
+# Por qué elegirnos
 --------------------------------------------------------------*/
+#elegirnos i {
+	font-size: 3rem;
+	color: rgba(27, 144, 194, 1);
+}
