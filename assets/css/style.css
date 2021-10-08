@@ -6,7 +6,69 @@
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+header {
+	background: rgba(89, 182, 223, 1);
+	padding: 0px 0px;
+  }
+  
+  .solidHeader {
+	background: rgba(89, 182, 223, 1);
+	color: white;
+	padding: 0px 0px;
+	transition: all 1.5s;
+  }
+  
+  .transparentHeader {
+	background: rgba(89, 182, 223, .75);
+  }
+  
+  .navbar-brand:hover > * {
+	color: rgba(255, 255, 255, 1);
+  }
 
+
+header i {
+	font-size: 2rem;
+  }
+
+header .brandName {
+	display: inline-flex;
+	font-size: 1.75rem;
+  }
+  
+  header .brandSlogan {
+	font-size: 0.7rem;
+  }
+
+
+/* Back to top button */
+
+.back-to-top {
+	position: fixed;
+	display: none;
+	right: 20px;
+	bottom: 100px;
+	z-index: 99999;
+  }
+  
+  .back-to-top i {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	background: #47b2e4;
+	color: #fff;
+	transition: all 0.4s;
+  }
+  
+  .back-to-top i:hover {
+	background: #209dd8;
+	color: #fff;
+  }
+  
 
 /*--------------------------------------------------------------
 # Nuestros servicios
