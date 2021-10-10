@@ -8,7 +8,7 @@ a:hover {
   ol, ul {
     list-style:disc;
 	list-style-position: outside;
-	margin-left: 30px;
+	margin-left: 55px;
 	
 }
 
@@ -193,7 +193,8 @@ header .brandName {
 /*--------------------------------------------------------------
 # Por qué elegirnos
 --------------------------------------------------------------*/
-#elegirnos i {
+#elegirnos i,
+#formasPago i {
 	font-size: 3rem;
 	color: rgba(27, 144, 194, 1);
 }
@@ -205,9 +206,10 @@ header .brandName {
 /* 3D Image with text */
 
 .flip-box {
-	width: 270px;
-	height: 270px;
+	width: 300px;
+	height: 320px;
 	perspective: 1000px;
+	margin: 10px;
   }
   
   .flip-box-inner {
@@ -219,7 +221,7 @@ header .brandName {
   }
   
   .flip-box:hover .flip-box-inner {
-	transform: rotateY(180deg);
+	transform: rotateY(.5turn);
   }
   
   .flip-box-front, .flip-box-back {
@@ -234,35 +236,420 @@ header .brandName {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transform-style: preserve-3d;
+	background: white;
+  }
+
+  .flip-box-front img {
+	  transform: translateZ(100px);
   }
   
   .flip-box-back {
 	color: white;
 	transform: rotateY(180deg);
 	border-radius: calc(.25rem - 1px);
+	transform-style: preserve-3d;
+	/* background: rgba(27, 144, 194, .75); */
   }
 
   .flip-box-back h3 {
-	  margin-top: 10px;
+	  margin-top: 30px;
 	  text-align: center;
   }
 
+  .flip-box-back h3,
+  .flip-box-back ul {
+	transform: translateZ(100px);
+  }
+
+  .flip-box-back ul {
+	  margin-right: 25px;
+  }
+
 .sika .flip-box-back {
-	background-color: rgba(228, 35, 47, 1);
+	background-color: rgba(228, 35, 47, .95);
   }
 
   .pasa .flip-box-back {
-	background-color: rgba(253, 82, 31, 1);
+	background-color: rgba(253, 82, 31, .95);
   }
 
   .pintolux .flip-box-back {
-	background-color: rgba(210, 19, 129, 1);
-  }
-
-  .pintolux img {
-	  background: rgba(3, 17, 96, 1);
+	background-color: rgba(210, 19, 129, .95);
   }
 
   .impac .flip-box-back {
-	background-color: rgba(8, 76, 149, 1);
+	background-color: rgba(8, 76, 149, .95);
+  }
+
+  .pintolux img {
+	background: rgba(3, 17, 96, 1);
+}
+
+
+/*--------------------------------------------------------------
+# Cotizaciones & Contacto forms
+--------------------------------------------------------------*/
+.cotiza-form,
+.message-form {
+	width: 100%;
+	border-top: 3px solid rgba(27, 144, 194, .75);
+	border-bottom: 3px solid rgba(27, 144, 194, .75);
+	padding: 30px;
+	background: #fff;
+	box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .cotiza-form .form-group,
+  .message-form .form-group {
+	padding-bottom: 8px;
+  }
+  
+  .cotiza-form .validate,
+  .message-form .validate {
+	color: rgba(27, 144, 194, .75);
+	margin: 0 0 15px 0;
+	font-weight: 400;
+	font-size: 13px;
+  }
+  
+  .cotiza-form .sent-cotiza,
+  .message-form .sent-cotiza {
+	display: none;
+	color: #fff;
+	background: #18d26e;
+	text-align: center;
+	padding: 15px;
+	font-weight: 600;
+  }
+  
+  .cotiza-form input,
+  .cotiza-form textarea,
+  .message-form input,
+  .message-form textarea {
+	border-radius: 0;
+	box-shadow: none;
+	/* font-size: 14px; */
+	border-radius: 4px;
+  }
+  
+  .cotiza-form input:focus,
+  .cotiza-form textarea:focus,
+  .message-form input:focus,
+  .message-form textarea:focus {
+	border-color: rgba(27, 144, 194, .75);
+  }
+  
+  .cotiza-form input,
+  .message-form input {
+	height: 44px;
+  }
+  
+  .cotiza-form textarea,
+  .message-form textarea {
+	padding: 10px 12px;
+  }
+  
+  #submitCotizaBtn,
+  #submitMessageBtn {
+	background: rgba(27, 144, 194, .75);
+	border: 0;
+	padding: 12px 34px;
+	color: #fff;
+	transition: 0.4s;
+	border-radius: 50px;
+  }
+  
+  #submitCotizaBtn:hover,
+  #submitMessageBtn:hover {
+	background: rgba(27, 144, 194, 1);
+  }
+
+
+/*--------------------------------------------------------------
+# Contact0
+--------------------------------------------------------------*/
+
+  .info {
+  border-top: 3px solid rgba(27, 144, 194, .75);
+  border-bottom: 3px solid rgba(27, 144, 194, .75);
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+.info i {
+  font-size: 20px;
+  color: rgba(27, 144, 194, .75);
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #e7f5fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.info h3 {
+  padding: 0 0 0 60px;
+  /* font-size: 22px; */
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  /* font-size: 14px; */
+  color: black;
+}
+
+.info a {
+  padding-left: 15px;
+}
+
+.info .email:hover i,
+.info .address:hover i,
+.info .phone:hover i {
+  background: rgba(27, 144, 194, .75);
+  color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer .footer-newsletter {
+	padding: 50px 0;
+	background: #f3f5fa;
+	text-align: center;
+	/* font-size: 1rem; */
+	color: #444444;
+  }
+  
+  #footer .footer-newsletter h4 {
+	/* font-size: 1.5rem; */
+	margin: 0 0 20px 0;
+	padding: 0;
+	line-height: 1;
+	font-weight: 600;
+	color: #37517e;
+  }
+  
+  #newsSubscribeDiv {
+	background: #fff;
+	padding: 6px 10px;
+	position: relative;
+	border-radius: 50px;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+	text-align: left;
+  }
+  
+  #newsSubscribeDiv label {
+	color: #6182ba;
+	font-size: 13px;
+  }
+  
+  #newsSubscribeInput {
+	/* width: calc(100% - 100px); */
+	width: calc(100% - 50px);
+	padding: 6px 10px;
+	position: relative;
+	border: none;
+  }
+  
+  #newsSubscribeInput:focus {
+	outline: none;
+  }
+  
+  #newsSubscribeBtn {
+	/* position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	border: 0; */
+	background: none;
+	/* font-size: 16px; */
+	border: 0;
+	margin-top: 24px;
+	padding: 12px 34px;
+	background: #47b2e4;
+	color: #fff;
+	transition: 0.3s;
+	border-radius: 50px;
+  }
+  
+  #newsSubscribeBtn:focus,
+  button:focus {
+	outline: none;
+  }
+  
+  #newsSubscribeBtn:hover {
+	background: #209dd8;
+  }
+  
+  .footer-newsletter .validate {
+	text-align: left;
+	color: #6182ba;
+	margin-left: 0.5rem;
+	margin-top: 5px;
+	line-height: 1.5;
+	font-size: 13px;
+  }
+  
+  #footer .footer-top {
+	padding: 60px 0 30px 0;
+	background: #fff;
+  }
+  
+  footer .logo {
+	font-size: 1.7rem;
+	color: #37517e;
+  }
+  
+  footer .brandName {
+	margin: 0 !important;
+	padding: 0 0 1rem 0 !important;
+	line-height: 1 !important;
+	font-weight: 600;
+	color: #37517e !important;
+	display: inline-flex !important;
+  }
+  
+  footer .brandSlogan {
+	font-size: 0.7rem !important;
+	color: #37517e !important;
+  }
+  
+  footer i {
+	font-size: 18px;
+	color: white;
+  }
+  
+  #footer .footer-top .footer-contact {
+	margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-contact h3 {
+	/* font-size: 28px; */
+	margin: 0 0 10px 0;
+	padding: 2px 0 2px 0;
+	line-height: 1;
+	font-weight: 600;
+	color: #37517e;
+  }
+  
+  #footer .footer-top .footer-contact p {
+	/* font-size: 14px; */
+	line-height: 24px;
+	margin-bottom: 0;
+	font-family: "Jost", sans-serif;
+	color: #5e5e5e;
+  }
+  
+  #footer .footer-top h4 {
+	/* font-size: 1.5rem; */
+	font-weight: bold;
+	color: #37517e;
+	position: relative;
+	padding-bottom: 12px;
+  }
+  
+  #footer .footer-top .footer-links {
+	margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+	padding-right: 2px;
+	color: #47b2e4;
+	font-size: 18px;
+	line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+	padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+	color: #666666;
+	transition: 0.3s;
+	display: inline-block;
+	line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+	text-decoration: none;
+	color: #47b2e4;
+  }
+  
+  #footer .footer-top .social-links a {
+	font-size: 18px;
+	display: inline-block;
+	background: #47b2e4;
+	color: #fff;
+	line-height: 1;
+	padding: 8px 0;
+	margin-right: 4px;
+	border-radius: 50%;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	transition: 0.3s;
+  }
+  
+  #footer .footer-top .social-links a:hover {
+	background: #209dd8;
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  #footer .footer-bottom {
+	padding: 30px 100px;
+	background: rgba(56, 82, 125, 1);
+	color: #fff;
+  }
+  
+  #footer .copyright {
+	float: left;
+  }
+  
+  #footer .credits {
+	float: right;
+	font-size: 13px;
+  }
+  
+  #footer .credits a {
+	transition: 0.3s;
+  }
+  
+  @media (max-width: 768px) {
+	#footer .footer-bottom {
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+	}
+	#footer .copyright,
+	#footer .credits {
+	  text-align: center;
+	  float: none;
+	}
+	#footer .credits {
+	  padding-top: 4px;
+	}
   }
