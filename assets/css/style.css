@@ -12,6 +12,7 @@ h2 {
 
 h2 span {
 	color: rgba(27, 144, 194, .75);
+	font-weight:normal;
 }
 
 h3 {
@@ -25,6 +26,11 @@ h3 {
     background: rgba(27, 144, 194, .75);
     display: block;
     margin: 0 auto 3rem auto;
+}
+
+.v-line {
+    border-left: 3px solid rgba(27, 144, 194, .75);
+    padding-left: 20px;
 }
 
 a:hover {
@@ -159,7 +165,7 @@ header .brandName {
   
   .backImageDiv {
 	height: 100%;
-	background-image: url(../img/carousel/carousel0.jpg);
+	background-image: url(../img/carousel/carousel.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -192,7 +198,29 @@ header .brandName {
 /*--------------------------------------------------------------
 # Nosotros
 --------------------------------------------------------------*/
-  img {
+#nosotros .col {
+	padding: 0 30px;
+}
+
+.mision {
+	width: 300px;
+	padding: 0px;
+	margin-bottom: 15px;
+}
+
+.vision {
+	background: rgba(27, 144, 194, .75);
+	color: white;
+	padding: 30px;
+	width: 300px;
+	height:max-content;
+}
+
+.vision h3 {
+	color: white;
+}
+
+img {
 	  border-radius: calc(.25rem - 1px);
   }
 
@@ -202,14 +230,17 @@ header .brandName {
 
 /* Image Hover Text Overlay Effect: https://www.youtube.com/watch?v=exb2ab72Xhs */
 #servicios .card {
-    position: relative;
-    width: 400px;
+	position: relative;
     overflow: hidden;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
 	color: white;
 }
 
 #servicios .card-img {
-	height: 300px;
+	max-width: 100%;
+	height: 350px;
 }
 
 #servicios h3 {
@@ -219,7 +250,8 @@ header .brandName {
 .cardOverlay {
     position: absolute;
     background: rgba(27, 144, 194, .75);
-    height: 100%;
+    width: 100%;
+	height: 100%;
     transform: translateY(90%);
     transition: transform 0.25s;
 }
@@ -259,7 +291,7 @@ header .brandName {
 # Por qué elegirnos
 --------------------------------------------------------------*/
 #elegirnos {
-	background-image: url(../img/services/services5.jpg);
+	background-image: url(../img/home/elegirnos.jpg);
 }
 
 #elegirnos h2,
