@@ -23,10 +23,10 @@
 
 <body>
   <!-- HEADER -->
-  <header class="sticky-top paralelogramo">
-    <nav class="navbar navbar-expand-sm navbar-dark mb-0">
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark mb-0">
       <div class="container">
-        <nav class="navbar">
+        <nav class="navbar paralelogramo">
           <a class="navbar-brand m-0 p-0" href="/">
             <i class="fas fa-dice-d20 m-0 p-0"></i>
             <p class="brandName m-0 p-0">Pixan Materiales</p>
@@ -52,9 +52,6 @@
               <a class="nav-link" href="#cotizaciones">Cotizaciones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#formasPago">Formas de pago</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
@@ -69,29 +66,37 @@
     <div class="backImageDiv"></div>
 
     <div class="overlayCarousel">
-      <div id="homeCarousel" class="carousel slide mb-5" data-ride="carousel">
-        <ol class="carousel-indicators mb-5">
+      <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
           <li class="active" data-target="#homeCarousel" data-slide-to="0"></li>
           <li data-target="#homeCarousel" data-slide-to="1"></li>
           <li data-target="#homeCarousel" data-slide-to="2"></li>
+          <li data-target="#homeCarousel" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active pt-0">
-            <div class="carousel-caption d-none d-md-block mb-5">
-              <h3>Slide One</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illo?</p>
+            <div class="carousel-caption d-md-block">
+              <i class="fas fa-dice-d20 m-0 p-0"></i>
+              <p class="brandName m-0 p-0">Pixan Materiales</p>
+              <h1 class="mb-0 p-0">Distribuidores de las principales marcas de materiales para construcción</h1>
             </div>
           </div>
           <div class="carousel-item pt-0">
-            <div class="carousel-caption d-none d-md-block mb-5">
-              <h3>Slide Two</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illo?</p>
+            <div class="carousel-caption d-md-block">
+              <h3>Bienvenidos a Pixan Materiales</h3>
+              <p>Somos distribuidores de las mejores marcas.</p>
             </div>
           </div>
           <div class="carousel-item pt-0">
-            <div class="carousel-caption d-none d-md-block mb-5">
-              <h3>Slide Three</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illo?</p>
+            <div class="carousel-caption d-md-block">
+              <h3>El servicio que necesitas</h3>
+              <p>Nuestros expertos técnicos te ayudarán a encontrar los productos adecuados para tu proyecto.</p>
+            </div>
+          </div>
+          <div class="carousel-item pt-0">
+            <div class="carousel-caption d-md-block">
+              <h3>Tiempos de entrega</h3>
+              <p>24 horas en las principales ciudades y 72 horas en el resto del país.</p>
             </div>
           </div>
         </div>
@@ -115,8 +120,47 @@
         <span>Acerca de</span> Pixan Materiales
       </h2>
       <span class="b-line"></span>
-      <div class="row row-cols-1 row-cols-md-2">
+      <div class="row">
         <div class="col">
+          <p>Somos una empresa Mexicana distribuidora multimarca de materialares de construcción, ferretería y
+            acabados.</p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-3">
+        <div class="col">
+          <h3>Cubrimos todas las etapas de construcción:</h3>
+          <ul>
+            <li>Obra negra</li>
+            <li>Obra gris</li>
+            <li>Acabados</li>
+            <li>Mantenimiento preventivo y correctivo</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Orgullosos distribuidores:</h3>
+          <ul>
+            <li>Sika</li>
+            <li>PASA</li>
+            <li>Pintolux</li>
+            <li>Impac</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Amplica variedad de productos:</h3>
+          <ul>
+            <li>Impermeabilizantes</li>
+            <li>Sellado</li>
+            <li>Concretos</li>
+            <li>Reparación y reforzamiento</li>
+            <li>Pisos</li>
+            <li>Acabados</li>
+            <li>Adhesivos</li>
+            <li>Pinturas</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-8">
           <div class="mision">
             <div class="v-line">
               <h3>
@@ -131,7 +175,7 @@
             <img src="./assets/img/home/mision.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <div class="col">
+        <div class="col-md-6 col-lg-4">
           <div class="vision">
             <h3>
               <span>Nuestra</span> Visión
@@ -184,7 +228,7 @@
                   <i class="fab fa-penny-arcade"></i>
                 </div>
               </div>
-              <h3>Opciones diferentes marcas</h3>
+              <h3> Diferentes marcas</h3>
               <p>This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
             </div>
@@ -228,8 +272,8 @@
     <!-- /Servicios -->
 
     <!-- Por qué elegirnos -->
-    <div class="parallaxDiv">
-      <section id="elegirnos" class="parallax">
+    <section id="elegirnos" class="parallax">
+      <div class="parallaxFront">
         <h2>
           <span>Por Qué</span> Elegirnos
         </h2>
@@ -300,8 +344,8 @@
           </div>
 
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <!-- /Por qué elegirnos -->
 
     <!-- Distribuidores -->
