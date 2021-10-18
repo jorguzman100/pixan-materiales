@@ -375,8 +375,9 @@ header .brandName {
 /* CSS flip card on hover: https://www.youtube.com/watch?v=FeJEEE3zc4U&t=847s */
 
 .flip-box {
-	width: 300px;
-	height: 320px;
+	/* width: 300px; */
+	max-width: 100%;
+	height: 350px;
 	perspective: 1000px;
 	margin: 10px;
   }
@@ -407,7 +408,7 @@ header .brandName {
 	align-items: center;
 	border-radius: calc(.5rem);
 	transform-style: preserve-3d;
-	/* background: rgba(247, 247, 247, 1); */
+	background-color: rgba(247, 247, 247, 1);
   }
 
   .flip-box-front img {
@@ -416,11 +417,10 @@ header .brandName {
   }
   
   .flip-box-back {
-	/* color: white; */
 	transform: rotateY(180deg);
 	border-radius: calc(.5rem);
 	transform-style: preserve-3d;
-	/* background: rgba(27, 144, 194, .75); */
+	background-color: rgba(247, 247, 247, .9);
   }
 
   .flip-box-back h3 {
@@ -434,16 +434,8 @@ header .brandName {
   }
 
   .flip-box-back ul {
-	  margin-right: 25px;
-  }
-
-.flip-box-front {
-	background-color: rgba(247, 247, 247, 1);
-  }
-
-.flip-box-back {
-	background-color: rgba(247, 247, 247, .9);
-  }
+	padding-right: 15px;
+}
 
 /* .sika .flip-box-front,
 .sika .flip-box-back {
@@ -858,9 +850,13 @@ header .brandName {
 	}
 }
 
-
   
   @media (max-width: 768px) {
+	.flip-box-back ul {
+		padding-left: 27%;
+		padding-right: 27%;
+	}
+
 	#footer .footer-bottom {
 	  padding-top: 20px;
 	  padding-bottom: 20px;
