@@ -24,6 +24,10 @@ h3 {
 	font-size: 1.5rem;
 }
 
+img {
+	border-radius: calc(.25rem - 1px);
+}
+
 .b-line {
     position: relative;
     width: 100px;
@@ -240,6 +244,7 @@ header .brandName {
 	/* width: 300px; */
 	padding: 0px;
 	margin-bottom: 15px;
+	height: 100%;
 }
 
 .vision {
@@ -248,15 +253,15 @@ header .brandName {
 	padding: 30px;
 	/* width: 300px; */
 	/* height:max-content; */
+	height: 100%;
 }
 
 .vision h3 {
 	color: white;
 }
 
-img {
-	  border-radius: calc(.25rem - 1px);
-	  max-width: 500px;
+.mision img {
+	vertical-align: bottom;
   }
 
 /*--------------------------------------------------------------
@@ -840,6 +845,9 @@ img {
 @media (min-width: 992px) {
 	i {
 		color: rgb(0, 200, 0);
+	}
+	.mision img {
+		max-width: 550px;
 	}
 }
 
