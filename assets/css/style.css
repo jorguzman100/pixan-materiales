@@ -49,7 +49,7 @@ a:hover {
   ol, ul {
     list-style:disc;
 	list-style-position: outside;
-	margin-left: 55px;
+	margin-left: 25px;
 	
 }
 
@@ -368,6 +368,10 @@ header .brandName {
 	color: rgba(27, 144, 194, 1);
 }
 
+.iDiv {
+	width: 70px;
+}
+
 /*--------------------------------------------------------------
 # Somos distribuidores
 --------------------------------------------------------------*/
@@ -435,6 +439,7 @@ header .brandName {
 
   .flip-box-back ul {
 	padding-right: 15px;
+	margin-left: 45px;
 }
 
 /* .sika .flip-box-front,
@@ -465,6 +470,10 @@ header .brandName {
 /*--------------------------------------------------------------
 # Cotizaciones & Contacto forms
 --------------------------------------------------------------*/
+.cotizacionesWrapper {
+	margin: auto;
+}
+
 .cotiza-form,
 .message-form {
 	width: 100%;
@@ -814,6 +823,7 @@ header .brandName {
 	i {
 		color: rgb(0, 50, 0);
 	}
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -824,6 +834,7 @@ header .brandName {
 	i {
 		color: rgb(0, 100, 0);
 	}
+
 }
 
 /* Medium devices (tablets, 768px and up) (cols-2) */
@@ -831,6 +842,7 @@ header .brandName {
 	i {
 		color: rgb(0, 150, 0);
 	}
+
 }
 
 /* Large devices (desktops, 992px and up) (cols-2-3) */
@@ -841,6 +853,7 @@ header .brandName {
 	.mision img {
 		max-width: 550px;
 	}
+
 }
 
 /* Extra large devices (large desktops, 1200px and up)  (cols-2-3) */
@@ -848,13 +861,14 @@ header .brandName {
 	i {
 		color: rgb(0, 250, 0);
 	}
+
 }
 
   
   @media (max-width: 768px) {
 	.flip-box-back ul {
-		padding-left: 27%;
-		padding-right: 27%;
+		padding-left: 10%;
+		padding-right: 10%;
 	}
 
 	#footer .footer-bottom {
