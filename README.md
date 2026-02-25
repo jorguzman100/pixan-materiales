@@ -1,4 +1,4 @@
-# Pixan Materiales
+# 👷🏻 Pixan Materiales 🏗️
 
 ### Official landing site for a construction materials distributor, built to be fast, clear, and easy to deploy.
 
@@ -6,15 +6,15 @@ Pixan Materiales is a responsive one-page website focused on presenting services
 
 ---
 
-## Features
+## ✨ Features
 
 | | Feature | What It Does |
 |---|---|---|
-| 1 | One-page navigation | Smooth scrolling between key sections (Inicio, Nosotros, Servicios, Distribuidores, Cotizaciones, Contacto). |
-| 2 | Service showcase | Visual cards explain Pixan's core services with image overlays and short descriptions. |
-| 3 | Distributor catalog | Flip cards present partner brands and their product lines in a compact format. |
-| 4 | Contact + quote UI | Includes quote and contact form layouts ready to connect to a backend later. |
-| 5 | Responsive layout | Bootstrap-based layout works across mobile and desktop screen sizes. |
+| 🧭 | One-page navigation | Smooth scrolling between key sections (Inicio, Nosotros, Servicios, Distribuidores, Cotizaciones, Contacto). |
+| 🛠️ | Service showcase | Visual cards explain Pixan's core services with image overlays and short descriptions. |
+| 🤝 | Distributor catalog | Flip cards present partner brands and their product lines in a compact format. |
+| 📨 | Contact + quote UI | Includes quote and contact form layouts ready to connect to a backend later. |
+| 📱 | Responsive layout | Bootstrap-based layout works across mobile and desktop screen sizes. |
 
 ---
 
@@ -29,7 +29,7 @@ Pixan Materiales is a responsive one-page website focused on presenting services
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
@@ -39,14 +39,14 @@ Pixan Materiales is a responsive one-page website focused on presenting services
 
 ---
 
-## Project Snapshot
+## 🧩 Project Snapshot
 
 - Static frontend project (no `server/` yet; forms are UI-ready and pending backend/email integration).
 - Main app lives in `client/` with `index.html`, `assets/css/`, `assets/js/`, and optimized image assets.
 
 ---
 
-## Live Demo
+## 🚀 Live Demo
 
 ![Deployment](https://img.shields.io/badge/Deployment-Not%20deployed%20yet-lightgrey?style=for-the-badge)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge&logo=github)](https://github.com/jorguzman100/pixan-materiales)
@@ -55,7 +55,7 @@ No public deployment yet. Run it locally for now.
 
 ---
 
-## Run it locally
+## 💻 Run it locally
 
 ```bash
 git clone https://github.com/jorguzman100/pixan-materiales.git
@@ -63,16 +63,16 @@ cd pixan-materiales
 python3 -m http.server 8000 --directory client
 ```
 
-Local URL:
+### 🔗 Local URL
 
 - Frontend: `http://localhost:8000`
 
-Environment variables:
+### 🔐 Environment variables
 
 - No `.env` file is required for the current version (static frontend only).
 
 ---
 
-## Contributors
+## 🤝 Contributors
 
 - **Jorge Guzman**  ·  [@jorguzman100](https://github.com/jorguzman100)
